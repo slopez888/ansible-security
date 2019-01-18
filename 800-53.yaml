@@ -1,4 +1,4 @@
-{% raw %}
+#{% raw %}
 ---
 - hosts: web
   become: yes
@@ -27,4 +27,4 @@
         mode: 0644
       with_items: "{{ results.stdout_lines }}"
       when: item | match("scan-xccdf-report-*")
-{% endraw %}
+#{% endraw %}
