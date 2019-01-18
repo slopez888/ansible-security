@@ -1,6 +1,6 @@
 #{% raw %}
 ---
-- hosts: web
+- hosts: all
   become: yes
   vars:
     scap_reports_dir: /tmp
