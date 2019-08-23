@@ -63,11 +63,11 @@
     - AU-9
     - AU-9(2)
 
-- name: Enable rsyslog Service
-  service:
-    name: rsyslog
-    state: running
-    enabled: yes
-  tags:
-  - AU
-  - AU-12
+#- name: Enable rsyslog Service
+#  service:
+#    name: rsyslog
+#    state: running
+#    enabled: yes
+#  tags:
+#  - AU
+#  - AU-12
