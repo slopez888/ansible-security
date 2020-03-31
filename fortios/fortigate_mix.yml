@@ -5,9 +5,8 @@
    username: "admin"
    password: "r3dh4t1!"
    vdom: "root"
+  
   tasks:
-# If you manage python pip externaly you don't need that version is
-# here to ensure update/downgrade if needed (optional)
   - name: Set static route on the fortigate
     fortiosconfig:
      action: "set"
