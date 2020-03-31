@@ -5,6 +5,7 @@
    password: "r3dh4t1!"
    vdom: "root"
    https: yes
+   ssl_verify: no
   tasks:
   - name: Configure IPv4 policies.
     fortios_firewall_policy:
