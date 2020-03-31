@@ -2,7 +2,7 @@
   gather_facts: false
   tasks:
   - fortios_firewall_policy:
-      host: "192.168.122.40"
+      host: "34.209.118.204"
       username: admin
       password: ""
       vdom: root
