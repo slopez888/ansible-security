@@ -12,8 +12,8 @@
       username: "{{ username }}"
       password: "{{ password }}"
       vdom:  "{{ vdom }}"
-      #https: yes
-      #ssl_verify: no
+      https: yes
+      ssl_verify: no
       firewall_policy:
         state: "present"
         action: "accept"
