@@ -17,12 +17,12 @@
       firewall_policy:
         state: "present"
         action: "accept"
-        app-category:
-         -
-            id:  "5"
-        app-group:
-         -
-            name: "default_name_7 (source application.group.name)"
+        #app-category:
+        # -
+        #    id:  "5"
+        #app-group:
+        # -
+        #    name: "default_name_7 (source application.group.name)"
         application:
          -
             id:  "9"
