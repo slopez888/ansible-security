@@ -1,0 +1,31 @@
+- hosts: localhost
+  gather_facts: false
+  tasks:
+  - fortios_firewall_policy:
+      host: "192.168.122.40"
+      username: admin
+      password: ""
+      vdom: root
+      https: True
+      ssl_verify: True
+      firewall_policy:
+        state: "present"
+        policyid: "2002"
+        name: "Policy_2002"
+        action: "deny"
+        srcintf:
+          - name: any
+        dstintf:
+          - name: any
+        srcaddr: 
+          - name: 'all'
+        dstaddr:
+          - name: 'all'
+        service: 
+          - name: 'HTTP'
+          - name: 'HTTPS'
+        schedule: "always"
+        nat: "disable"
+        logtraffic: "all"
+        logtraffic-start: "disable"
+        uuid: "20190306-2321-0001-2002-e5167ed833c7"
