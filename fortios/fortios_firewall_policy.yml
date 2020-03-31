@@ -2,7 +2,7 @@
   vars:
    host: "34.209.118.204"
    username: "admin"
-   password: ""
+   password: "r3dh4t1!"
    vdom: "root"
   tasks:
   - name: Configure IPv4 policies.
