@@ -2,7 +2,7 @@
   gather_facts: false
   vars:
     host: "34.209.118.204"
-    username: ""
+    username: "admin"
     password: "redh4t1!"
     vdom: "root"
     policy_action: 
@@ -10,7 +10,7 @@
     service2:
     policy_name:
     policy_id: 
-    policy_uuid: 
+    policy_state:
 
   tasks:
   - fortios_firewall_policy:
@@ -21,7 +21,7 @@
      https: yes
      ssl_verify: no
      firewall_policy:
-        state: "present"
+        state: "{{ policy_state }}"
         policyid: "{{ policy_id }}"
         name: "{{ policy_name }}"
         action: "{{  policy_action }}"
