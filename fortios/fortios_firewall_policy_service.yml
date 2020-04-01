@@ -7,7 +7,7 @@
       password: ""
       vdom: root
       https: True
-      ssl_verify: True
+      ssl_verify: False
       firewall_policy:
         state: "present"
         policyid: "2002"
