@@ -27,5 +27,5 @@
         schedule: "always"
         nat: "disable"
         logtraffic: "all"
-        logtraffic-start: "disable"
+        #logtraffic-start: "disable"
         uuid: "20190306-2321-0001-2002-e5167ed833c7"
