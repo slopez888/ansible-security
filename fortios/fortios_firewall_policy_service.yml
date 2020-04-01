@@ -2,9 +2,14 @@
   gather_facts: false
   vars:
     host: "34.209.118.204"
-    username: "admin"
-    password: "r3dh4t1!"
+    username: ""
+    password: ""
     vdom: "root"
+    action: 
+    service1:
+    service2:
+    policy_name:
+    policy_id: 
 
   tasks:
   - fortios_firewall_policy:
@@ -16,9 +21,9 @@
      ssl_verify: no
      firewall_policy:
         state: "present"
-        policyid: "2002"
-        name: "Policy_2002"
-        action: "deny"
+        policyid: "{{ policy_id }}"
+        name: "{{ policy_name }}"
+        action: "{{ action }}"
         srcintf:
           - name: any
         dstintf:
@@ -28,10 +33,9 @@
         dstaddr:
           - name: 'all'
         service: 
-          - name: 'HTTP'
-          - name: 'HTTPS'
+          - name: "{{ service1 }}"
+          - name: "{{ service2 }}"
         schedule: "always"
         nat: "disable"
         logtraffic: "all"
-        #logtraffic-start: "disable"
         uuid: "20190306-2321-0001-2002-e5167ed833c7"
