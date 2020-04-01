@@ -1,9 +1,9 @@
 - hosts: localhost
   gather_facts: false
   vars:
-    host: ""
+    host: "34.209.118.204"
     username: ""
-    password: "redh4t1!"
+    password: ""
     vdom: "root"
     policy_action: 
     service1:
