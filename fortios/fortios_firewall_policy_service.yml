@@ -5,7 +5,7 @@
     username: ""
     password: ""
     vdom: "root"
-    action: 
+    policy_action: 
     service1:
     service2:
     policy_name:
@@ -23,7 +23,7 @@
         state: "present"
         policyid: "{{ policy_id }}"
         name: "{{ policy_name }}"
-        action: "{{ action }}"
+        action: "{{  policy_action }}"
         srcintf:
           - name: any
         dstintf:
