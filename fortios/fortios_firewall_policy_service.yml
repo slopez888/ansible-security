@@ -1,14 +1,20 @@
 - hosts: localhost
   gather_facts: false
+  vars:
+    host: "34.209.118.204"
+    username: "admin"
+    password: "r3dh4t1!"
+    vdom: "root"
+
   tasks:
   - fortios_firewall_policy:
-      host: "34.209.118.204"
-      username: admin
-      password: ""
-      vdom: root
-      https: True
-      ssl_verify: False
-      firewall_policy:
+     host:  "{{ host }}"
+     username: "{{ username }}"
+     password: "{{ password }}"
+     vdom:  "{{ vdom }}"
+     https: yes
+     ssl_verify: no
+     firewall_policy:
         state: "present"
         policyid: "2002"
         name: "Policy_2002"
