@@ -11,6 +11,7 @@
     policy_name:
     policy_id: 
     policy_state:
+    policy_uuid:
 
   tasks:
   - fortios_firewall_policy:
