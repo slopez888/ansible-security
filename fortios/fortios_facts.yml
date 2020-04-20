@@ -17,10 +17,6 @@
       ssl_verify: "False"
       gather_subset:
         - fact: 'system_status_select'
-  
-  - name: "Print status"
-    debug: 
-      var: system_status_select 
 
   - name: gather all physical interfaces status facts
     fortios_facts:
