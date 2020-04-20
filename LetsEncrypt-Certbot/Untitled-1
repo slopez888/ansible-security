@@ -1,0 +1,11 @@
+---
+- name: Renew local SSL cert using CertBot (Let's Encrypt)
+  hosts: localhost
+  vars:
+    vcsim: 192.168.1.225
+    password: 
+
+  tasks: 
+    - name: Run renew command
+      shell: certbot renew
+      register: result

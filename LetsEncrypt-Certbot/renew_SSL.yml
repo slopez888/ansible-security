@@ -1,0 +1,11 @@
+---
+- name: Renew local SSL cert using CertBot (Let's Encrypt)
+  hosts: localhost
+  become: true
+  vars:
+    cmd: 
+
+  tasks: 
+    - name: Run renew command
+      shell: certbot renew
+      register: result
