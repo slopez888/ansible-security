@@ -1,7 +1,7 @@
 - hosts: localhost
   gather_facts: false
   vars:
-    host: "34.209.118.204"
+    host: "54.215.135.227"
     username: ""
     password: ""
     vdom: "root"
