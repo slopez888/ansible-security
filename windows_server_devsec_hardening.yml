@@ -1,0 +1,6 @@
+- name: Harden Windows Server machines using DevSec Hardening framework
+  hosts: all
+  
+  
+  roles:
+        - dev-sec.windows-hardening
