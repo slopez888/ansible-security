@@ -2,7 +2,7 @@
   vars:
    host: "34.209.118.204"
    username: "admin"
-   password: "r3dh4t1!"
+   password:
    vdom: "root"
 
   tasks:
